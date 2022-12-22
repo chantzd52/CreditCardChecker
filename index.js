@@ -48,7 +48,7 @@ function validateCred (arr) {
 
   sum += lastElement;  // adds the last element of the array that we stored earlier back to the array.
  
-  if (sum % 10 == 0) {  // checks if the sum of the array when divided by 10 has a remander.
+  if (sum % 10 == 0) {  // checks if the sum of the array when divided by 10 has a remainder.
     return "valid"; 
   } else {
     return "invalid";
@@ -67,24 +67,24 @@ function findInvalidCards(cards) {
 };
 
   function idInvalidCompanies(invalidCards) {
-    let companys = [];
+    let companies = [];
     for (i = 0; i < invalidCards.length; i++) {
       if (invalidCards[i][0] == 3) {
-        companys.push("Amex");
+        companies.push("Amex");
       };
       if (invalidCards[i][0] == 4) {
-        companys.push("Visa");
+        companies.push("Visa");
       };
       if (invalidCards[i][0] == 5) {
-        companys.push("Mastercard");
+        companies.push("Mastercard");
       };
       if (invalidCards[i][0] == 6) {
-        companys.push("Discover");
+        companies.push("Discover");
       };
     };
 
-    const invalidCompanys = companys.filter((item, index) => companys.indexOf(item) === index); //filters duplicate companys names.
-    return invalidCompanys;
+    const invalidCompanies = companies.filter((item, index) => companies.indexOf(item) === index); //filters duplicate company names.
+    return invalidCompanies;
   };
 
   //console.log(findInvalidCards(batch));
