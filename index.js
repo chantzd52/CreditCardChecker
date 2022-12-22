@@ -88,4 +88,5 @@ function findInvalidCards(cards) {
   };
 
   //console.log(findInvalidCards(batch));
+  
   console.log(idInvalidCompanies(findInvalidCards(batch)));
